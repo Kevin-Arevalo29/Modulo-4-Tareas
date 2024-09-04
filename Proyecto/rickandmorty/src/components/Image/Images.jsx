@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Imagens = (props)=> {
+const Images = (props)=> {
   return (
     <img className='imgs' src={props.url} alt="Rick" />
   )
 }
 
-export default Imagens
+export default Images

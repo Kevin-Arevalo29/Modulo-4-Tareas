@@ -1,20 +1,20 @@
-import React from 'react'
-import Title from './components/Title/Title'
-import Imagens from './components/Image/Imagens'
-import Details from './components/Details/Details'
-import './App.css'
+import React from "react";
+import RickAndMortyCard from "./components/RickAndMortyCard/RickAndMortyCard";
+import "./App.css";
 
 function App() {
-  
-
   return (
-   <div className='card'>
-    <div className='imgs'><Imagens url="./Rick.jpg"/></div>
-    <div className='circule'><Details Status='Vivo' /></div>
-    <div className='title'><Title Title='Rick Sanchez'/></div>
-    <div className='details'><Details Genre='Hombre'/></div>
-   </div>
-  )
+    <>
+    <h1 className="title1">Personajes de Rick An Morty</h1>
+    <div className="position">
+       
+      <RickAndMortyCard id={1} />
+      <RickAndMortyCard id={2} />
+      <RickAndMortyCard id={3} />
+      <RickAndMortyCard id={4} />
+    </div>
+    </>
+  );
 }
 
-export default App
+export default App;

@@ -1,13 +1,22 @@
 .card{
   background-color: hwb(107 28% 4%);
-  border: 3px solid black;
+  border: 5px solid black;
   border-radius: 8px;
   box-shadow: 0 4px black;
   max-width: 200px;
   margin: 14px;
 }
-
-.circule{ 
+.position{
+  display: flex;
+  justify-content: center; 
+  gap: 16px;
+}
+.title1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+.circle{ 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 2px solid black;
   text-align: center;
@@ -20,7 +29,7 @@
 }
 .imgs{
   width: 100%;
-  border-bottom: 3px solid black;
+  border-bottom: 5px solid black;
 }
 .title{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
