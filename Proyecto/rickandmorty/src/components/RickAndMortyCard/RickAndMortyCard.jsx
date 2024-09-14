@@ -1,38 +1,35 @@
 import React, { useEffect, useState } from 'react'
 import CharacterCard from '../CharacterCard/CharacterCard';
 
-const RickAndMortyCard = ({id}) => {
+const RickAndMortyCard = () => {
 
-  const[name, setName]= useState('');
-  const[image, setImage]= useState('')
-  const[gender, setGender]= useState('')
-  const[status, setStatus]= useState('')
+  const[characterList, setCharacterList]= useState([]);
+ 
   
 
     useEffect(() => {
       
-      fetch(`https://rickandmortyapi.com/api/character/${id}`)
+      fetch(`https://rickandmortyapi.com/api/character/`)
       .then((res) => res.json())
       .then((data) =>{
         console.log(data,'dataaa <----')
-        setName(data.name)
-        setImage(data.image)
-        setGender(data.gender)
-        setStatus(data.status)
+        setCharacterList(data.results)
       })
       .catch((error) => console.error("hay un error: ", error))
-    }, [id])
+    }, [])
 
   return (
-    <div >
-
-    <CharacterCard
+    <div className='position'>
+    {characterList.map((character)=>(
+      <CharacterCard
     
-    name={name}
-    image={image}
-    gender={gender}
-    status={status}
-/> 
+      name={character.name}
+      image={character.image}
+      gender={character.gender}
+      status={character.status}
+      />
+    ))}
+
    </div>
   )
 }
