@@ -1,21 +1,38 @@
+body{
+  background-image: url(./components/portal.jpg);
+  margin: auto;
+}
 .card{
   background-color: hwb(107 28% 4%);
-  border: 5px solid black;
+  border: 5px solid rgba(255, 255, 255, 0.821);
   border-radius: 8px;
   box-shadow: 0 4px black;
   max-width: 200px;
   
 }
 .position{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 14px;
+  display:flex;
+  justify-content: center;  
+  flex-wrap:wrap;
+  gap: 17px;
+  
 }
-.title1 {
+.title{
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+.title1{
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.title2{
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 50px;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 .circle{ 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -30,16 +47,43 @@
 }
 .imgs{
   width: 100%;
-  border-bottom: 5px solid black;
+  border-bottom: solid 10px rgb(0, 0, 0);
 }
-.title{
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 30px;
-  text-align: center;
-}
+
 .details {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: large;
-  font-size: 15px;
+  font-size: 25px;
   text-align: center;
+}
+.button {
+  font-size: 20px;
+  background-color: black;
+  color: rgb(34, 255, 0);
+  border: 2px solid rgb(34, 255, 0);
+  justify-content: center;
+  margin: 16px 0;
+  
+}
+.textb{
+ color: rgb(90, 255, 8);
+ font-size: 20px;
+}
+.error{font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(132, 16, 16);
+  text-align: center;
+}
+.em{
+  font-size: 200px;
+}
+/* Styles Nav */
+.active{
+  font-size: 90px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aqua;;
+}
+.positionNav{
+  text-align: center;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

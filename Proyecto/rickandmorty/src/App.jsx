@@ -1,15 +1,20 @@
-import React from "react";
-import RickAndMortyCard from "./components/RickAndMortyCard/RickAndMortyCard";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
+import HomeP from './components/Pages/Home/HomeP';
+import CharacterP from './components/Pages/CharacterPages/CharacterP';
+import NotFounP from "./components/Pages/NotFount/NotFounP";
 
 function App() {
   return (
-    <>
-    <h1 className="title1">Personajes de Rick An Morty</h1>
-    <div >
-      <RickAndMortyCard />
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomeP/>}/>
+          <Route path='/Personajes' element={<CharacterP/>}/>
+          <Route path='/*' element={<NotFounP/>}/>
+        </Routes>
+      </Router>
     </div>
-    </> 
   );
 }
 
