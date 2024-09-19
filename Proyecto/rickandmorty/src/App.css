@@ -8,40 +8,37 @@ body{
   border-radius: 8px;
   box-shadow: 0 4px black;
   max-width: 200px;
+  font-family: cursive;
+  font-size: 25px;
   
 }
 .position{
   display:flex;
   justify-content: center;  
   flex-wrap:wrap;
-  gap: 17px;
+  gap: 20px;
   
 }
-.title{
-  font-size: 25px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-}
 .title1{
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 100px;
+  font-family:cursive;
+  font-size: 70px;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 .title2{
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: cursive;
   font-size: 50px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(80, 6, 176);
 }
 .circle{ 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: cursive;
   border: 2px solid black;
   text-align: center;
   border-radius: 30px;
-  width: 60px;
-  margin-left: 70px;
-  margin-top: -15px;
+  width: 100px;
+  margin-left: 50px;
+  margin-top: -34px;
   background-color: hwb(107 28% 4%);
   position: relative;
 }
@@ -51,9 +48,11 @@ body{
 }
 
 .details {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-top: solid 5px black;
+  font-family:cursive;
   font-size: 25px;
   text-align: center;
+  color: #262121;
 }
 .button {
   font-size: 20px;
@@ -68,22 +67,61 @@ body{
  color: rgb(90, 255, 8);
  font-size: 20px;
 }
-.error{font-size: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.error{font-size: 30px;
+  font-family: cursive;
   color: rgb(132, 16, 16);
   text-align: center;
 }
 .em{
-  font-size: 200px;
+  font-size: 100px;
 }
 /* Styles Nav */
 .active{
   font-size: 90px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: aqua;;
+  font-family: cursive;
+  color: rgb(22, 123, 30);;
 }
 .positionNav{
   text-align: center;
   font-size: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+ /* Filters Section */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.filters input {
+  font-family: cursive;
+  padding: 10px;
+  border: 2px solid #4ca221; /* Color turquesa */
+  border-radius: 5px;
+  background-color: #1c2519;
+  color: #e0e0e0;
+  font-size: 2em;
+  width: 300px;
+}
+
+.filters input::placeholder {
+  color: #4bec06; /* Color del texto del placeholder */
+}
+
+.filters button {
+  font-family: cursive;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3cc32f; /* Color naranja brillante */
+  color: #000000;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #e64a19; /* Color naranja más oscuro para el hover */
 }
